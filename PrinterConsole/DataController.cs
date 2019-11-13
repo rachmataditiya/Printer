@@ -13,8 +13,13 @@ namespace PrinterConsole
         [Route(HttpVerbs.Post, "/print")]
         public async Task Ticket()
         {
-            var data = await HttpContext.GetRequestDataAsync<Ticket>();
-            Console.WriteLine("Test");
+            var data = await HttpContext.GetRequestDataAsync<List<Ticket>>();
+            CetakTicket(data);
+        }
+
+        private void CetakTicket(List<Ticket> data)
+        {
+            string tanggal = data[0].date;
         }
     }
 }

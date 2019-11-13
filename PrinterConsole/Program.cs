@@ -32,7 +32,9 @@ namespace PrinterConsole
                     .WithWebApi("/api", m => m
                     .WithController<DataController>());
 
+            // Listen for state changes.
             server.StateChanged += (s, e) => $"WebServer New State - {e.NewState}".Info();
+
             return server;
         }
     }
