@@ -5,7 +5,7 @@ using EmbedIO;
 using EmbedIO.Routing;
 using EmbedIO.WebApi;
 using Swan.Formatters;
-
+using System;
 
 namespace PrinterConsole
 {
@@ -21,6 +21,7 @@ namespace PrinterConsole
         private void CetakTicket(List<Ticket> data)
         {
             string tanggal = data[0].date;
+            //handle disini buat ambil data yang mau dicerak
         }
         public async Task UpdateStatus(int ticket_id, string api_key)
         {
@@ -29,8 +30,13 @@ namespace PrinterConsole
             requestMessage.Headers.Add("X-Api-Key", api_key);
             HttpResponseMessage response = await client.SendAsync(requestMessage);
             var result = Json.Deserialize<PrintResult>(await response.Content.ReadAsStringAsync());
+            GetResult(result);
         }
 
+        private void GetResult(PrintResult result)
+        {
+            //handle disini hasil response dari odoo
+        }
     }
     
 }
