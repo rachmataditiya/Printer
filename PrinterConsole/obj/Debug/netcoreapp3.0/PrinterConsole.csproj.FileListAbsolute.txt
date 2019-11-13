@@ -1,0 +1,14 @@
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\bin\Debug\netcoreapp3.0\PrinterConsole.exe
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\obj\Debug\netcoreapp3.0\PrinterConsole.AssemblyInfoInputs.cache
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\obj\Debug\netcoreapp3.0\PrinterConsole.AssemblyInfo.cs
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\obj\Debug\netcoreapp3.0\PrinterConsole.csprojAssemblyReference.cache
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\bin\Debug\netcoreapp3.0\PrinterConsole.deps.json
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\bin\Debug\netcoreapp3.0\PrinterConsole.runtimeconfig.json
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\bin\Debug\netcoreapp3.0\PrinterConsole.runtimeconfig.dev.json
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\bin\Debug\netcoreapp3.0\PrinterConsole.dll
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\bin\Debug\netcoreapp3.0\PrinterConsole.pdb
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\bin\Debug\netcoreapp3.0\EmbedIO.dll
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\bin\Debug\netcoreapp3.0\Swan.Lite.dll
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\obj\Debug\netcoreapp3.0\PrinterConsole.csproj.CopyComplete
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\obj\Debug\netcoreapp3.0\PrinterConsole.dll
+C:\Users\behin\source\repos\PrinterConsole\PrinterConsole\obj\Debug\netcoreapp3.0\PrinterConsole.pdb

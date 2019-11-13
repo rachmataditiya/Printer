@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\behin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\behin\\.nuget\\packages"
+    ]
+  }
+}

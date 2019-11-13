@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "PrinterConsole/1.0.0": {
+        "dependencies": {
+          "EmbedIO": "3.1.3"
+        },
+        "runtime": {
+          "PrinterConsole.dll": {}
+        }
+      },
+      "EmbedIO/3.1.3": {
+        "dependencies": {
+          "Unosquare.Swan.Lite": "2.4.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/EmbedIO.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.1.3.0"
+          }
+        }
+      },
+      "Unosquare.Swan.Lite/2.4.2": {
+        "runtime": {
+          "lib/netstandard2.0/Swan.Lite.dll": {
+            "assemblyVersion": "2.4.2.0",
+            "fileVersion": "2.4.2.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PrinterConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EmbedIO/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WVq4oOmXLkfM+iLeL3FPmFRyLCwnp/WnYiToDRdB/6QgJ55LceAEDcPC/eOVEiPhQgGSxLnt8KKUFmG/ZDsb+A==",
+      "path": "embedio/3.1.3",
+      "hashPath": "embedio.3.1.3.nupkg.sha512"
+    },
+    "Unosquare.Swan.Lite/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xSUvuaYz6KlypJYCUU5mMEoC2R4jogMMZ/7JG+0HQIEZn5OUk8PQ0UFWDBkje8+BlOLdoxvbhGCEAbtsE/W7TA==",
+      "path": "unosquare.swan.lite/2.4.2",
+      "hashPath": "unosquare.swan.lite.2.4.2.nupkg.sha512"
+    }
+  }
+}
