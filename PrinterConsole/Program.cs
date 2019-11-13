@@ -1,7 +1,6 @@
 ﻿using System;
 using EmbedIO;
 using EmbedIO.WebApi;
-using Swan;
 using Swan.Logging;
 
 namespace PrinterConsole
