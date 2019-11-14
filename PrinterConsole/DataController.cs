@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using EmbedIO;
 using EmbedIO.Routing;
 using EmbedIO.WebApi;
@@ -26,10 +27,15 @@ namespace PrinterConsole
         public async Task UpdateStatus(int ticket_id, string api_key)
         {
             var client = new HttpClient();
-            HttpRequestMessage requestMessage = new HttpRequestMessage(HttpMethod.Put, "http://localhost/saloka/ticket/print_proxy/" +  ticket_id);
-            requestMessage.Headers.Add("X-Api-Key", api_key);
-            HttpResponseMessage response = await client.SendAsync(requestMessage);
-            var result = Json.Deserialize<PrintResult>(await response.Content.ReadAsStringAsync());
+            client.BaseAddress = new Uri("http://localhost");
+            client.DefaultRequestHeaders.Add("X-Api-Key", api_key);
+            client.DefaultRequestHeaders.Accept.Add(
+                    new MediaTypeWithQualityHeaderValue("application/json"));
+            var url = "/saloka/ticket/print_proxy/" + ticket_id;
+            HttpResponseMessage response = await client.GetAsync(url);
+            response.EnsureSuccessStatusCode();
+            var resp = await response.Content.ReadAsStringAsync();
+            var result = Json.Deserialize<PrintResult>(resp);
             GetResult(result);
         }
 
