@@ -28,6 +28,10 @@ namespace PrinterConsole
             var server = new WebServer(o => o
                     .WithUrlPrefix(url)
                     .WithMode(HttpListenerMode.EmbedIO))
+                    .WithCors(
+                        "https://saloka.arkana.app",
+                        "content-type, accept",
+                        "post")
                     .WithWebApi("/api", m => m
                     .WithController<DataController>());
 

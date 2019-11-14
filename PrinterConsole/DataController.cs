@@ -22,6 +22,7 @@ namespace PrinterConsole
         {
             string tanggal = data[0].date;
             //handle disini buat ambil data yang mau dicetak
+            Console.WriteLine(tanggal);
         }
         public async Task UpdateStatus(int ticket_id, string api_key)
         {
