@@ -12,10 +12,11 @@ namespace PrinterConsole
     public sealed class DataController : WebApiController
     {
         [Route(HttpVerbs.Post, "/print")]
-        public async Task Ticket()
+        public async Task<bool> Ticket(IHttpContext context)
         {
             var data = await HttpContext.GetRequestDataAsync<List<Ticket>>();
             CetakTicket(data);
+            return true;
         }
 
         private void CetakTicket(List<Ticket> data)
